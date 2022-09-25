@@ -31,7 +31,7 @@ let swiper = new Swiper(".slider-1", {
           spaceBetween: 20
         },
         1000: {
-          slidesPerView: 20
+          slidesPerView: 5
         }
       }
   });
