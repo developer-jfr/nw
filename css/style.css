@@ -7,6 +7,10 @@ body {
     overflow-x: hidden
 }
 
+p {
+    margin-bottom: 0 !important;
+}
+
 .vScrollMenu {
     height: 345px;
     padding-right: 0px;
@@ -2410,6 +2414,7 @@ blockquote h3:after {
     padding: 10px 40px;
     color: #fff;
     border-radius: 10px;
+    width: 100%;
 }
 
 .doctors-slider-img {
@@ -2431,6 +2436,64 @@ blockquote h3:after {
 .doctor-card {
     padding: 20px;
     border: 1px solid #E0E0E0;
+}
+
+/* ================ Images ======================= */
+
+.images-wrapp {
+    padding-inline: 5%;
+    padding-top: 50px;
+}
+
+.images-sc {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-fs-section {
+    display: flex;
+    gap: 20px;
+}
+
+.image-card {
+    padding: 25px;
+    border-radius: 15px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-card span {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.image-card p {
+    font-weight: 600;
+}
+
+.images-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+
+.images-img {
+    border-radius: 15px;
+}
+
+.images-sc-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 @media only screen and (max-width:1199px) {
@@ -2468,7 +2531,12 @@ blockquote h3:after {
 }
 
 @media only screen and (max-width:990px) {
-
+    .images-fs-section, .images-sc-section {
+        flex-direction: column;
+    }
+    .images-img  {
+        width: 100% !important;
+    }
     .doctors h2,
     .faq-title {
         font-size: 30px;
